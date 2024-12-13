@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balls</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div>
+        <p>
+            <button onclick="cialo()">Części ciała</button> <button onclick="lekarz()">Lekarz</button>
+        </p>
+
+        <p>
+            <label id="wybrano">Wybrano: </label>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            Przetłumacz: <label id="wyrazeniePoPolsku"></label>
+        </p>
+
+        <p>
+            <input type="text" id="odpowiedzPoNiemiecku" />
+        </p>
+
+        <p>
+            <button onclick="sprawdz()">Sprawdź!</button>
+        </p>
+
+        <p>
+            <label id="streak">Streak: </label>
+        </p>
+
+        <p>
+            <label id="odpowiedz"></label>
+        </p>
+    </div>
+
+    <script src="balls.js">
+
+    </script>
+</body>
+
+</html>
