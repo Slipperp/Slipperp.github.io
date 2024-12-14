@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Balls</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="balls.js" defer></script>
 </head>
 
 <body>
@@ -45,11 +44,13 @@
     <div>
         <p>Jak nie masz niemieckiej klawiatury to wpisuj:</p>
         <p>
-            <button>Ä</button> <button>ä</button>
-            <button>Ö</button> <button>ö</button>
-            <button>Ü</button> <button>ü</button>
+            <button onclick="wpisz('Ä')">Ä</button> <button onclick="wpisz('ä')">ä</button>
+            <button onclick="wpisz('Ö')">Ö</button> <button onclick="wpisz('ö')">ö</button>
+            <button onclick="wpisz('Ü')">Ü</button> <button onclick="wpisz('ü')">ü</button>
         </p>
     </div>
+
+    <script src="balls.js"></script>
 </body>
 
 </html>
