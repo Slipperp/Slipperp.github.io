@@ -106,7 +106,12 @@ document.getElementById("odpowiedzPoNiemiecku").addEventListener("keydown", func
     }
 });
 
-function wpisz(znak) {
-    const input = document.getElementById('odpowiedzPoNiemiecku');
-    input.value += znak;
-}
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll("button[onclick^='wpisz']").forEach(button => {
+        button.addEventListener("click", () => {
+            const znak = button.textContent.trim();
+            const input = document.getElementById('odpowiedzPoNiemiecku');
+            input.value += znak;
+        });
+    });
+});
