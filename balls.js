@@ -1,20 +1,20 @@
 const zestawySlow = {
     "Części ciała": [
         { p: "twarz", n: "das Gesicht" },
-        { p: "ramiona", n: "die Schulter" },
+        { p: "ramię", n: "die Schulter" },
         { p: "klatka piersiowa", n: "die Brust" },
         { p: "brzuch", n: "der Bauch" },
         { p: "dłoń", n: "die Hand" },
         { p: "palec u ręki", n: "der Finger" },
         { p: "noga", n: "das Bein" },
         { p: "kolano", n: "das Knie" },
-        { p: "kostka", n: "der Knochel" },
+        { p: "kostka", n: "der Knöchel" },
         { p: "palec u stopy", n: "der Zeh" },
-        { p: "stopa", n: "der FuB" },
+        { p: "stopa", n: "der Fuß" },
         { p: "pupa", n: "der Po" },
         { p: "łokieć", n: "der Ellenbogen" },
         { p: "ręka", n: "der Arm" },
-        { p: "plecy", n: "der Rucken" },
+        { p: "plecy", n: "der Rücken" },
         { p: "głowa", n: "der Kopf" },
         { p: "ucho", n: "das Ohr" },
         { p: "ząb", n: "der Zahn" },
@@ -24,14 +24,19 @@ const zestawySlow = {
         { p: "nos", n: "die Nase" },
         { p: "oko", n: "das Auge" },
         { p: "czoło", n: "die Stirn" },
-        { p: "włosy", n: "das Haare" }
+        { p: "włosy", n: "die Haare" }
     ],
     "Lekarz": [
-        { p: "szpital", n: "das Krankenhaus" },
-        { p: "lekarz", n: "der Arzt" },
-        { p: "pacjent", n: "der Patient" }
+        { p: "Za tydzień w poniedziałek Szybkiego powrotu do zdrowia", n: "Nächste Woche am Montag Gute Besserung" },
+        { p: "Kiedy powinienem przyjść na kontrolę", n: "Wann soll ich zur Kontrolle kommen" },
+        { p: "Dziękuję doktorze Do widzenia", n: "Danke schön Herr Doktor Auf Wiedersehen" },
+        { p: "Czy powinienem brać leki", n: "Soll ich Medikamente einnehmen" },
+        { p: "Czuję się źle", n: "Ich fühle mich schlecht" },
+        { p: "Tak przepiszę Ci tabletki krople do nosa i syrop na kaszel", n: "Ja ich verschreibe Ihnen Tabletten Nasentropfen und Hustensaft" },
+        { p: "Trzy razy dziennie Zostań w łóżku przez tydzień Proszę to jest twoja recepta i zwolnienie lekarskie", n: "Dreimal täglich Bleiben Sie eine Woche im Bett Bitte das sind Ihr Rezept und Ihre Krankschreibung" }
     ]
 };
+
 
 let aktualnyZestaw = [];
 let aktualneSlowo = null;
