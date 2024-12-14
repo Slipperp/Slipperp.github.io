@@ -33,7 +33,13 @@ const zestawySlow = {
         { p: "Czy powinienem brać leki", n: "Soll ich Medikamente einnehmen" },
         { p: "Czuję się źle", n: "Ich fühle mich schlecht" },
         { p: "Tak przepiszę Ci tabletki krople do nosa i syrop na kaszel", n: "Ja ich verschreibe Ihnen Tabletten Nasentropfen und Hustensaft" },
-        { p: "Trzy razy dziennie Zostań w łóżku przez tydzień Proszę to jest twoja recepta i zwolnienie lekarskie", n: "Dreimal täglich Bleiben Sie eine Woche im Bett Bitte das sind Ihr Rezept und Ihre Krankschreibung" }
+        { p: "Trzy razy dziennie Zostań w łóżku przez tydzień Proszę to jest twoja recepta i zwolnienie lekarskie", n: "Dreimal täglich Bleiben Sie eine Woche im Bett Bitte das sind Ihr Rezept und Ihre Krankschreibung" },
+        { p: "dzień dobry doktorze", n: "Guten Tag Herr Dotkor" },
+        { p: "Jak często powinienem przyjmować lek", n: "Wie oft soll ich die Medikamente einnehmen" },
+        { p: "Czy masz gorączkę?", n: "Haben Sie Fieber" },
+        { p: "Jak się czujesz", n: "Was fehlt Ihnen" },
+        { p: "Od dwóch dni boli mnie głowa mam kaszel i katar Całe ciało mnie boli", n: "Seit zwei Tagen habe ich Kopfschmerzen Husten und Schnupfen Der ganze Körper tut mir weh" },
+        { p: "Nie wyglądasz dobrze Jak się czujesz", n: "Sie sehen nicht gut aus Wie fühlen Sie sich" }
     ]
 };
 
