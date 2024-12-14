@@ -105,3 +105,8 @@ document.getElementById("odpowiedzPoNiemiecku").addEventListener("keydown", func
         sprawdz();
     }
 });
+
+function wpisz(znak) {
+    const input = document.getElementById('odpowiedzPoNiemiecku');
+    input.value += znak;
+}
