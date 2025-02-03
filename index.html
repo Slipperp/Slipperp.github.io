@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Balls</title>
+    <title>Trener słówek</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
     <div>
+        <h2>Wybierz temat:</h2>
         <p>
-            <button onclick="cialo()">Części ciała</button> <button onclick="lekarz()">Lekarz</button>
+            <button onclick="temat1()">Temat 1</button>
+            <button onclick="temat3()">Temat 3</button>
         </p>
 
         <p>
@@ -20,12 +22,13 @@
     </div>
 
     <div>
+        <h3>Przetłumacz:</h3>
         <p>
-            Przetłumacz: <label id="wyrazeniePoPolsku"></label>
+            <label id="wyrazeniePoPolsku"></label>
         </p>
 
         <p>
-            <input type="text" id="odpowiedzPoNiemiecku" />
+            <input type="text" id="odpowiedzPoNiemiecku" placeholder="Wpisz odpowiedź..." />
         </p>
 
         <p>
@@ -33,7 +36,7 @@
         </p>
 
         <p>
-            <label id="streak">Streak: </label>
+            <label id="streak">Streak: 0</label>
         </p>
 
         <p>
@@ -42,7 +45,8 @@
     </div>
 
     <div>
-        <p>Jak nie masz niemieckiej klawiatury to wpisuj:</p>
+        <h3>Znaki specjalne:</h3>
+        <p>Jeśli nie masz niemieckiej klawiatury, kliknij znak:</p>
         <p>
             <button onclick="wpisz('Ä')">Ä</button> 
             <button onclick="wpisz('ä')">ä</button>
@@ -54,6 +58,7 @@
         </p>
     </div>
 
+    Idk czy to wszystkie słówka czy nie. Nie ponosze odpowiedzialności, że coś jest na sprawdzianie czego tu nie ma
     <script src="balls.js"></script>
 </body>
 

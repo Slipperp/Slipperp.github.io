@@ -1,6 +1,5 @@
 const zestawySlow = {
     "temat_1": [
-        // Dyscypliny sportowe
         { p: "Aerobik", n: "Aerobic" },
         { p: "Koszykówka", n: "Basketball" },
         { p: "Boks", n: "Boxen" },
@@ -40,50 +39,37 @@ const zestawySlow = {
         { p: "Siatkówka", n: "Volleyball" },
         { p: "Wędrówki", n: "Wandern" },
         { p: "Piłka wodna", n: "Wasserball" },
-        { p: "Skok w dal", n: "Weitsprung" },
-
-        // Sprzęt sportowy
-        { p: "Strój kąpielowy", n: "der Badeanzug" },
-        { p: "Kąpielówki", n: "die Badehose" },
-        { p: "Czepek pływacki", n: "die Badekappe" },
-        { p: "Piłka", n: "der Ball" },
-        { p: "Czapka baseballowa", n: "die Baseballmütze" },
-        { p: "Rower", n: "das Fahrrad" },
-        { p: "Kask rowerowy", n: "der Fahrradhelm" },
-        { p: "Rękawiczki", n: "die Handschuhe" },
-        { p: "Ręcznik", n: "das Handtuch" },
-        { p: "Kij hokejowy", n: "der Hockeyschläger" },
-        { p: "Krążek hokejowy", n: "der Puck" },
-        { p: "Hulajnoga", n: "der Roller" },
-        { p: "Wrotki", n: "die Rollschuhe" },
-        { p: "Sanki", n: "der Schlitten" },
-        { p: "Łyżwy", n: "die Schlittschuhe" },
-        { p: "Gogle narciarskie", n: "die Schneebrille" },
-        { p: "Deskorolka", n: "das Skateboard" },
-        { p: "Narty", n: "die Skier" },
-        { p: "Snowboard", n: "das Snowboard" },
-        { p: "Odzież sportowa", n: "die Sportkleidung" },
-        { p: "Buty sportowe", n: "die Sportschuhe" },
-        { p: "Rakieta tenisowa", n: "der Tennisschläger" },
-        { p: "Butelka na napój", n: "die Trinkflasche" }
+        { p: "Skok w dal", n: "Weitsprung" }
     ],
-    "Lekarz": [
-        { p: "Za tydzień w poniedziałek Szybkiego powrotu do zdrowia", n: "Nächste Woche am Montag Gute Besserung" },
-        { p: "Kiedy powinienem przyjść na kontrolę", n: "Wann soll ich zur Kontrolle kommen" },
-        { p: "Dziękuję doktorze Do widzenia", n: "Danke schön Herr Doktor Auf Wiedersehen" },
-        { p: "Czy powinienem brać leki", n: "Soll ich Medikamente einnehmen" },
-        { p: "Czuję się źle", n: "Ich fühle mich schlecht" },
-        { p: "Tak przepiszę Ci tabletki krople do nosa i syrop na kaszel", n: "Ja ich verschreibe Ihnen Tabletten Nasentropfen und Hustensaft" },
-        { p: "Trzy razy dziennie Zostań w łóżku przez tydzień Proszę to jest twoja recepta i zwolnienie lekarskie", n: "Dreimal täglich Bleiben Sie eine Woche im Bett Bitte das sind Ihr Rezept und Ihre Krankschreibung" },
-        { p: "dzień dobry doktorze", n: "Guten Tag Herr Doktor" },
-        { p: "Jak często powinienem przyjmować lek", n: "Wie oft soll ich das Medikament einnehmen" },
-        { p: "Czy masz gorączkę?", n: "Haben Sie Fieber" },
-        { p: "Jak się czujesz", n: "Was fehlt Ihnen" },
-        { p: "Od dwóch dni boli mnie głowa mam kaszel i katar Całe ciało mnie boli", n: "Seit zwei Tagen habe ich Kopfschmerzen Husten und Schnupfen Der ganze Körper tut mir weh" },
-        { p: "Nie wyglądasz dobrze Jak się czujesz", n: "Sie sehen nicht gut aus Wie fühlen Sie sich" }
-    ]
+    
+    "temat_3": [
+    { p: "życie", n: "das Leben" },
+    { p: "od dzieciństwa", n: "von Kindheit an" },
+    { p: "niewysportowany", n: "unsportlich" },
+    { p: "dorastać", n: "aufwaschen" },
+    { p: "jako dziecko", n: "als Kind" },
+    { p: "ulubiona dyscyplina sportowa", n: "die Lieblingssportart" },
+    { p: "najlepiej", n: "Am besten" },
+    { p: "ruszać się", n: "sich bewagen" },
+    { p: "nie mieć ochoty", n: "keine Lust haben" },
+    { p: "w przyszłości", n: "in Zukunft" },
+    { p: "nic do zrobienia", n: "nichts zu tun" },
+    { p: "mieć możliwości", n: "die Möglichkeit haben" },
+    { p: "na lekcji WF-u", n: "in Sportunterricht" },
+    { p: "unikać", n: "vermeiden" },
+    { p: "należeć do", n: "gehören zu" },
+    { p: "związek sportowy", n: "der Sportverein" },
+    { p: "kółko sportowe", n: "die Sport-AG" },
+    { p: "leniwy", n: "faul" },
+    { p: "ćwiczenie sportowe", n: "die Sportübung" },
+    { p: "mimo to", n: "trotzdem" },
+    { p: "chociaż", n: "obwohl" },
+    { p: "mieć przyjemność", n: "Spaß haben" },
+    { p: "odgrywać ważną rolę", n: "eine wichtige Rolle spielen" },
+    { p: "na świeżym powietrzu", n: "im Freien" },
+    { p: "na zewnątrz", n: "draußen" }
+]
 };
-
 
 let aktualnyZestaw = [];
 let aktualneSlowo = null;
@@ -98,7 +84,7 @@ function ustawZestaw(nazwaZestawu) {
 function wylosujSlowo() {
     if (aktualnyZestaw.length === 0) {
         document.getElementById("wyrazeniePoPolsku").innerText = "";
-        alert("Najpierw wybierz zestaw słów!");
+        alert("Najpierw wybierz temat!");
         return;
     }
     const indeks = Math.floor(Math.random() * aktualnyZestaw.length);
@@ -108,7 +94,7 @@ function wylosujSlowo() {
 
 function sprawdz() {
     if (!aktualneSlowo) {
-        alert("Najpierw wybierz zestaw i wylosuj słowo!");
+        alert("Najpierw wybierz temat i wylosuj słowo!");
         return;
     }
     const odpowiedz = document.getElementById("odpowiedzPoNiemiecku").value.trim().toLowerCase();
@@ -132,12 +118,12 @@ function sprawdz() {
     wylosujSlowo();
 }
 
-function cialo() {
-    ustawZestaw("Części ciała");
+function temat1() {
+    ustawZestaw("temat_1");
 }
 
-function lekarz() {
-    ustawZestaw("Lekarz");
+function temat3() {
+    ustawZestaw("temat_3");
 }
 
 document.getElementById("odpowiedzPoNiemiecku").addEventListener("keydown", function (event) {
