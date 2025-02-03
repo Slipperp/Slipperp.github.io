@@ -24,7 +24,6 @@ const zestawySlow = {
         { p: "Jazda na hulajnodze", n: "Rollerfahren" },
         { p: "Jazda na wrotkach", n: "Rollschuhfahren" },
         { p: "Jazda na sankach", n: "Schlittenfahren" },
-        { p: "Łyżwiarstwo", n: "Schlittschuhlaufen" },
         { p: "Pływanie", n: "Schwimmen" },
         { p: "Żeglarstwo", n: "Segeln" },
         { p: "Jazda na deskorolce", n: "Skateboardfahren" },
