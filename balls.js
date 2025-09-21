@@ -123,16 +123,17 @@ function sprawdz() {
         balls.innerHTML = "Twoja odpowiedź jest poprawna. <br>Wylosowano kolejne słowo.";
         streak += 1;
         streakLabel.innerHTML = `Streak: ${streak}`;
+        wylosujSlowo();
     } else {
         balls.style.color = "#ff0000";
-        balls.innerHTML = `Źle! Poprawna odpowiedź: ${poprawnaOdpowiedz}. <br>Wylosowano kolejne słowo.`;
+        balls.innerHTML = `Źle! Poprawna odpowiedź to: ${poprawnaOdpowiedz}. <br>Spróbuj ponownie z tym samym słowem.`;
         streak = 0;
         streakLabel.innerHTML = `Streak: ${streak}`;
     }
 
     document.getElementById("odpowiedzPoNiemiecku").value = "";
-    wylosujSlowo();
 }
+
 
 function temat1() {
     ustawZestaw("temat_1");
