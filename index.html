@@ -9,76 +9,56 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="main-content">
-            <div>
-                <h2>Wybierz temat:</h2>
-                <p>
-                    <button onclick="temat1()">Temat 2</button>
-                    <button onclick="temat3()">Temat 3</button>
-                </p>
-        <!--kinda sus ngl-->
-                <p>
-                    <label id="wybrano">Wybrano: </label>
-                </p>
-            </div>
-
-            <div>
-                <h3>Przetłumacz:</h3>
-                <p>
-                    <label id="wyrazeniePoPolsku"></label>
-                </p>
-
-                <p>
-                    <input type="text" id="odpowiedzPoNiemiecku" placeholder="Wpisz odpowiedź..." />
-                </p>
-
-                <p>
-                    <button onclick="sprawdz()">Sprawdź!</button>
-                </p>
-
-                <p>
-                    <label id="streak">Streak: 0</label>
-                </p>
-
-                <p>
-                    <label id="odpowiedz"></label>
-                </p>
-            </div>
-
-            <div>
-                <h3>Znaki specjalne:</h3>
-                <p>Jeśli nie masz niemieckiej klawiatury, kliknij znak:</p>
-                <p>
-                    <button onclick="wpisz('Ä')">Ä</button> 
-                    <button onclick="wpisz('ä')">ä</button>
-                    <button onclick="wpisz('Ö')">Ö</button> 
-                    <button onclick="wpisz('ö')">ö</button>
-                    <button onclick="wpisz('Ü')">Ü</button> 
-                    <button onclick="wpisz('ü')">ü</button>
-                    <button onclick="wpisz('ß')">ß</button>
-                </p>
-            </div>
-
-            <p style="font-size: 0.9em; color: #aaa;">Idk czy to wszystkie słówka czy nie. Nie ponosze odpowiedzialności, że coś jest na sprawdzianie czego tu nie ma</p>
-        </div>
-
-        <div class="sidebar">
-            <div>
-                <h3>Sugestie</h3>
-                <p>
-                    <textarea id="sugestia" placeholder="Wpisz swoją sugestię..." style="width: calc(100% - 20px); padding: 10px; border: 2px solid #004e92; border-radius: 5px; font-family: Arial, sans-serif; color: white; background-color: rgba(0, 0, 0, 0.5); min-height: 80px; resize: vertical;"></textarea>
-                </p>
-                <p>
-                    <input type="email" id="email" placeholder="Twój email (opcjonalnie)" style="width: calc(100% - 20px); padding: 10px; border: 2px solid #004e92; border-radius: 5px; font-size: 1em;" />
-                </p>
-                <p>
-                    <button onclick="wyslijSugescie()" style="width: 100%; margin-top: 10px;">Wyślij sugestię</button>
-                </p>
-            </div>
-        </div>
+    <div>
+        <h2>Wybierz temat:</h2>
+        <p>
+            <button onclick="temat1()">Temat 2</button>
+            <button onclick="temat3()">Temat 3</button>
+        </p>
+<!--kinda sus ngl-->
+        <p>
+            <label id="wybrano">Wybrano: </label>
+        </p>
     </div>
 
+    <div>
+        <h3>Przetłumacz:</h3>
+        <p>
+            <label id="wyrazeniePoPolsku"></label>
+        </p>
+
+        <p>
+            <input type="text" id="odpowiedzPoNiemiecku" placeholder="Wpisz odpowiedź..." />
+        </p>
+
+        <p>
+            <button onclick="sprawdz()">Sprawdź!</button>
+        </p>
+
+        <p>
+            <label id="streak">Streak: 0</label>
+        </p>
+
+        <p>
+            <label id="odpowiedz"></label>
+        </p>
+    </div>
+
+    <div>
+        <h3>Znaki specjalne:</h3>
+        <p>Jeśli nie masz niemieckiej klawiatury, kliknij znak:</p>
+        <p>
+            <button onclick="wpisz('Ä')">Ä</button> 
+            <button onclick="wpisz('ä')">ä</button>
+            <button onclick="wpisz('Ö')">Ö</button> 
+            <button onclick="wpisz('ö')">ö</button>
+            <button onclick="wpisz('Ü')">Ü</button> 
+            <button onclick="wpisz('ü')">ü</button>
+            <button onclick="wpisz('ß')">ß</button>
+        </p>
+    </div>
+
+    Idk czy to wszystkie słówka czy nie. Nie ponosze odpowiedzialności, że coś jest na sprawdzianie czego tu nie ma
     <script src="balls.js"></script>
 </body>
 
