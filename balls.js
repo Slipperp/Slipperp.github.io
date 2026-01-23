@@ -149,3 +149,38 @@ function wpisz(znak) {
     const input = document.getElementById('odpowiedzPoNiemiecku');
     input.value += znak;
 }
+function wyslijSugescie() {
+    const sugestia = document.getElementById('sugestia').value.trim();
+    const email = document.getElementById('email').value.trim();
+    
+    if (!sugestia) {
+        alert('Wpisz swoją sugestię!');
+        return;
+    }
+    
+    const form = document.createElement('form');
+    form.method = 'POST';
+    form.action = 'https://formsubmit.co/predkosci92@gmail.com'; 
+    
+    const textarea = document.createElement('textarea');
+    textarea.name = 'Sugestia';
+    textarea.value = sugestia;
+    form.appendChild(textarea);
+    
+    if (email) {
+        const emailInput = document.createElement('input');
+        emailInput.type = 'hidden';
+        emailInput.name = 'Email';
+        emailInput.value = email;
+        form.appendChild(emailInput);
+    }
+    
+    const replyTo = document.createElement('input');
+    replyTo.type = 'hidden';
+    replyTo.name = '_replyto';
+    replyTo.value = email || 'noreply@example.com';
+    form.appendChild(replyTo);
+    
+    document.body.appendChild(form);
+    form.submit();
+}
